@@ -1,0 +1,121 @@
+*
+{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+.calculator{
+	position: relative;
+	display: grid;
+	box-shadow: inset 0 0 50px rgba(0,0,0,.4),
+				0 40px 40px rgba(0,0,0,.4),
+				0 0 0 4px rgba(255,255,255,4);
+
+}
+.calculator .value{
+	grid-column: span 4;
+	height: 100px;
+	text-align: right;
+	border:none;
+	outline: none;
+	padding: 10px;
+	font-size: 20px ; 
+
+}
+.calculator span{
+	display: grid;
+	width: 80px;
+	height: 80px;
+	color: #fff;
+	background: #0c2835;
+	place-items:center;
+	border: 2px solid rgba(0,0,0,.1);
+	font-size: 20px;
+	cursor: pointer;
+}
+.calculator span:hover{
+	font-size: 40px;
+	background: blue;
+	transition: 0.2s;
+	transition-timing-function: ease-in;
+}
+.calculator span:active{
+	background: #090989;
+}
+
+
+.calculator span.clear{
+	grid-column: span 2;
+	width: 160px;
+	background: #ff6600;
+	font-size: 40px;
+	
+}
+.calculator span.clear:hover{
+	font-size: 60px;
+	transition: 0.2s;
+	transition-timing-function: ease-in;
+}
+.calculator span.clear:active{
+	background: #cc5004;
+	color: #fff;
+}
+
+.calculator span.plus{
+	grid-row: span 2;
+	height: 160px;
+	background: #808080;
+	font-size: 50px;
+	
+
+}
+.calculator span.plus:hover{
+	font-size: 60px;
+	transition: 0.2s;
+	transition-timing-function: ease-in;
+}
+.calculator span.plus:active{
+	background: #4c4a4a;
+	color: #fff;
+}
+
+.calculator span.equal{
+	background: #ff6600;
+	font-size: 50px;
+	
+}
+.calculator span.equal:hover{
+	font-size: 60px;
+	transition: 0.2s;
+	transition-timing-function: ease-in;
+}
+.calculator span.equal:active{
+	background: #cc5004;
+	color: #fff;
+}
+
+.calculator span.tool{
+	background: #808080;
+	font-size: 40px;
+}
+.calculator span.tool:hover{
+	font-size: 60px;
+	transition: 0.2s;
+	transition-timing-function: ease-in;
+}
+.calculator span.tool:active{
+	background: #4c4a4a;
+	color: #fff;
+}
+
+
+
+	
